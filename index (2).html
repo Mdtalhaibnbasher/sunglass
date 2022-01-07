@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunglass</title>
+  <link rel="shortcut icon" href="https://i.ibb.co/CttW1wX/SUNGLASS.png" type="image/x-icon">
+
+  <style>
+    *{
+      margin: 0;
+    }
+    #home img{
+      margin-top: 0;
+      width: 8em;
+    }
+    #home{
+      display: flex;
+    }
+    #home li{
+      list-style: none;
+      padding: 1.2em;
+    }
+    .navbar ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .navbar a{
+      text-decoration: none;
+      color: #cecece;
+      justify-content: end;
+    }
+
+
+
+
+    body {
+  margin: 0;
+  background: rgb(51, 51, 51);
+  text-align: center;
+  font-family: sans-serif;
+  color: #cecece;
+}
+.container {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 45s infinite forwards linear;
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+
+
+
+.carousel__face:nth-child(1) {
+  background-image: url("https://likeafilmstar.com/wp-content/uploads/2014/01/sunglasses-tom-cruise-wears-oblivion-1-749x340.jpg");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("https://banner2.cleanpng.com/20180324/whe/kisspng-tom-cruise-the-mummy-casting-actor-film-tom-cruise-5ab68e44142902.4643253515219134120826.jpg");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("https://images.thestar.com/2OVWvINaYC6WpHLUQ4YvjLyBNoA=/1280x1024/smart/filters:cb(1524671375660)/https://www.thestar.com/content/dam/thestar/news/canada/2015/11/03/justin-trudeaus-cabinet-is-the-shape-of-things-to-come/tab-na-cabinet3-004jpg.jpg");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("https://i1.wp.com/www.middleeastmonitor.com/wp-content/uploads/2017/08/20170828_2_25469308_25331086.jpg?resize=1200%2C800&quality=85&strip=all&zoom=1&ssl=1");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("https://assets.charmboard.com/images/w_1920,h_1012/x_315,y_106,w_1406,h_795,c_crop,f_auto,q_auto/h_541/v1579777897605/im/lc/1950536/rajinikanth-in-chumma-kizhi-darbar-tamil-2020.jpg");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("https://assets.charmboard.com/images/w_1920,h_1080/x_230,y_139,w_1423,h_802,c_crop,f_auto,q_auto/h_541/v1576744601955/im/lc/1866110/rajinikanth-in-darbar-tamil-2019.jpg");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("https://www.mapsofindia.com/ci-moi-images/my-india/2015/06/narendra-modi-western-outfit-665x695.jpg");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("https://4.bp.blogspot.com/-XYCUpu4v2fk/XsZNh6qgtzI/AAAAAAAAPZ8/74JAW072ka0qyYFpBSJvyyO6OsEXgWlrQCK4BGAYYCw/s1600/Esra%2BBilgic%2BBiography%2BAge%252C%2BBra%2BSize%252C%2BFamily%252C%2BBoyfriend%252C%2BEducation%252C%2BDramas%2B%2BAka%2BHalima%2BSultan%2Bfrom%2BDirilis%2BErtugrul%2BWiki%252C%2BFacts%2B%25281%2529.jpg");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("https://i.pinimg.com/originals/aa/58/39/aa58398cb0f6eaf895fffbfbab9bc387.jpg");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+
+.price{
+  margin-top: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.price img{
+  width: 12em;
+  height: 12em;
+}
+
+.one{
+  margin: 3em;
+}
+.one:hover{
+  box-shadow: 3.5px 3.5px 3.5px 3.5px #ffff;
+  cursor: pointer;
+}
+.two{
+  margin: 3em;
+}
+.two:hover{
+  box-shadow: 3.5px 3.5px 3.5px 3.5px #ffff;
+  cursor: pointer;
+}
+.three{
+  margin: 3em;
+}
+.three:hover{
+  box-shadow: 3.5px 3.5px 3.5px 3.5px #ffff;
+  cursor: pointer;
+}
+.four{
+  margin: 3em;
+}
+.four:hover{
+  box-shadow: 3.5px 3.5px 3.5px 3.5px #ffff;
+  cursor: pointer;
+}
+.five{
+  margin: 3em;
+}
+.five:hover{
+  box-shadow: 3.5px 3.5px 3.5px 3.5px #ffff;
+  cursor: pointer;
+}
+.six{
+  margin: 3em;
+}
+.six:hover{
+  box-shadow: 3.5px 3.5px 3.5px 3.5px #ffff;
+  cursor: pointer;
+}
+.seven{
+  margin: 3em;
+}
+.seven:hover{
+  box-shadow: 3.5px 3.5px 3.5px 3.5px #ffff;
+  cursor: pointer;
+}
+.eight{
+  margin: 3em;
+}
+.eight:hover{
+  box-shadow: 3.5px 3.5px 3.5px 3.5px #ffff;
+  cursor: pointer;
+}
+.nine{
+  margin: 2em;
+}
+.nine:hover{
+  box-shadow: 3.5px 3.5px 3.5px 3.5px #ffff;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+    <div id="home">
+      <div class="logo">
+        <img src="https://i.ibb.co/8Y0K0Cv/SUNGLASS-removebg-preview.png" alt="">
+      </div>
+
+      <div class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="products">
+      <div class="container">
+        <div class="carousel">
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+        </div>
+      </div>
+      </div>
+
+      <div class="price">
+        <div class="one">
+          <img src="https://likeafilmstar.com/wp-content/uploads/2014/01/sunglasses-tom-cruise-wears-oblivion-1-749x340.jpg" alt="">
+          <p>Tom Cruise glasses <br>$200</p>
+        </div>
+        <div class="two">
+          <img src="https://banner2.cleanpng.com/20180324/whe/kisspng-tom-cruise-the-mummy-casting-actor-film-tom-cruise-5ab68e44142902.4643253515219134120826.jpg" alt="">
+          <p>Tom Cruise glasses <br>$250</p>
+        </div>
+        <div class="three">
+          <img src="https://images.thestar.com/2OVWvINaYC6WpHLUQ4YvjLyBNoA=/1280x1024/smart/filters:cb(1524671375660)/https://www.thestar.com/content/dam/thestar/news/canada/2015/11/03/justin-trudeaus-cabinet-is-the-shape-of-things-to-come/tab-na-cabinet3-004jpg.jpg" alt="">
+          <p>Justin Trudeau glasses <br>$300</p>
+        </div>
+        <div class="four">
+          <img src="https://i1.wp.com/www.middleeastmonitor.com/wp-content/uploads/2017/08/20170828_2_25469308_25331086.jpg?resize=1200%2C800&quality=85&strip=all&zoom=1&ssl=1" alt="">
+          <p>Recep Erdogan glasses <br>$200</p>
+        </div>
+        <div class="five">
+          <img src="https://assets.charmboard.com/images/w_1920,h_1012/x_315,y_106,w_1406,h_795,c_crop,f_auto,q_auto/h_541/v1579777897605/im/lc/1950536/rajinikanth-in-chumma-kizhi-darbar-tamil-2020.jpg" alt="">
+          <p>Rajni Anna glasses <br>$500</p>
+        </div>
+        <div class="six">
+          <img src="https://assets.charmboard.com/images/w_1920,h_1080/x_230,y_139,w_1423,h_802,c_crop,f_auto,q_auto/h_541/v1576744601955/im/lc/1866110/rajinikanth-in-darbar-tamil-2019.jpg" alt="">
+          <p>Rajni Anna glasses <br>$500</p>
+        </div>
+        <div class="seven">
+          <img src="https://www.mapsofindia.com/ci-moi-images/my-india/2015/06/narendra-modi-western-outfit-665x695.jpg" alt="">
+          <p>Modi glasses <br>$700</p>
+        </div>
+        <div class="eight">
+          <img src="https://4.bp.blogspot.com/-XYCUpu4v2fk/XsZNh6qgtzI/AAAAAAAAPZ8/74JAW072ka0qyYFpBSJvyyO6OsEXgWlrQCK4BGAYYCw/s1600/Esra%2BBilgic%2BBiography%2BAge%252C%2BBra%2BSize%252C%2BFamily%252C%2BBoyfriend%252C%2BEducation%252C%2BDramas%2B%2BAka%2BHalima%2BSultan%2Bfrom%2BDirilis%2BErtugrul%2BWiki%252C%2BFacts%2B%25281%2529.jpg" alt="">
+          <p>Esra Bilgic glasses <br>$1200</p>
+        </div>
+        <div class="nine">
+          <img src="https://i.pinimg.com/originals/aa/58/39/aa58398cb0f6eaf895fffbfbab9bc387.jpg" alt="">
+          <p>Burcin Abdullah glasses <br>$2200</p>
+        </div>
+      </div>
+
+
+</body>
+</html>
